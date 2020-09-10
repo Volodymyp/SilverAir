@@ -1,722 +1,240 @@
 <!DOCTYPE html>
-<html lang="xzz">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Bootstrap4</title>
  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />  
-  	<meta content="" name="description"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />  
+  <meta content="" name="description"/>
 	<meta content="" name="author"/>
   <!-- GLOBAL MANDATORY STYLES -->
-	<link rel="stylesheet" type="text/css" href="source/bootstrap/bt4/bootstrap.min.css">
-   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="source/bootstrap/bt4/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-   <link rel="stylesheet" type="text/css" href="source/slick/slick.css"/>
-   <link rel="stylesheet" type="text/css" href="source/slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="source/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="source/slick/slick-theme.css"/>
 
 </head>
 <body data-spy="scroll" data-target=".navigation_box" data-offset="0">
-<div class="navigation_box container-fluid  fixed-top bg-white">
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">My logo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#aboutUs">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#ourServices">Servicing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#team">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact us</a>
-        </li>
-      </ul>
-      <div class="dropdown">
-        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <span class="dropdown_search"><i class="fas fa-search"></i></span>
-        </a>
-
-        <form class="dropdown-menu p-4" id="form_drop">
-          <div class="input-group  p-2">
-            <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i class="fas fa-search"></i></button>
-            </div>
-          </div>
-        </form>
+  <div class="navigation_box fixed-top">
+    <nav class="navbar navbar-expand-md">
+      <a class="navbar-brand" href="#"><img  class="navbar-brand-logo" src="img/page1/logo.png" alt="Silver air logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+      </button>
+      <div class="navbar__content">
+        <div class="navbar__content-top">
+          <div class="navbar__top-phone"><a class="navbar__phone-link" href="tel:8008895840"><i class="fas fa-phone-alt"></i>800.889.5840</a></div>
+          <div class="navbar__top-mail"><a class="navbar__mail-link" href="mailto:info@silverair.com"><i class="far fa-envelope"></i>INFO@SILVERAIR.COM</a></div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav">
+            <li class="nav-item active dropdown">
+              <button class="btn nav-link nav-item-link dropdown-toggle" data-toggle="dropdown">CHARTER<span class="sr-only">(current)</span></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn nav-link dropdown-toggle"  data-toggle="dropdown">MANAGEMENT</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn nav-link dropdown-toggle"  data-toggle="dropdown">COMPANY</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </li>
+            <li class="nav-item nav-item-last">
+              <a class="btn nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-</div>
+    </nav>
+  </div>
 
-
-<header id="home">
-  <div class="header__img ibg">
-    <div class="header__img-content">
-      <h1 class="header__img-title">Web development project</h1>
-      <p class="header__img-subtitle">Very suitable to support all web development projects</p>
-      <div class="header__button">
-        <button type="button" class="header__button-service btn">OUR SERVICES</button>
-        <button type="button" class="header__button-hire btn">HIRE IS NOW</button>
-      </div>
+<header class="page__header ibg">
+  <img class="page__header-img" src="img/page1/main_img.jpg" alt="car,road and mountains">
+  <div class="page__header-wrapper row">
+    <div class="page__header-content col-6 offset-6">
+      <h2>PRIVATE JET management and charter</h2>
     </div>
-     <img src="img/main.jpg" alt="">
+
+      <a class="page__header-btn btn-bot d-block" href="#foot"><img src="img/page1/arrow_down.png" alt="Arrow down"></a>
+
   </div>
 </header>
 
-<div class="aboutUs" id="aboutUs">
-    <h2 class="aboutUs__title block-title">About Us</h2>
-    <p class=" aboutUs__subtitle block-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-  <div class="aboutUs__body row">
-    <div class="aboutUs__body-awesome col-md-4">
-      <div class="aboutUs__body-icon">
-        <img src="img/aboutUs/img1.png" alt="world">
-      </div>
-      <div class="aboutUs__body-title">Awesome Icons</div>
-      <div class="aboutUs__body-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+<div class="about">
+  <div class="about__row">
+    <div class="about__charter">
+      <div class="about__charter-block ibg"><img class="about__charter-img" src="img/page1/air_plane1.png" alt="beautiful white airplane"></div>
+      <h2 class="about__charter-title box-title">CHARTER</h2>
+      <p class="about__charter-text box-subtitle">Our staff will quickly get you a quote for one of our world-class private jets. We'll handle every detail and support your trip every step of the way.</p>
     </div>
-    <div class="aboutUs__body-page col-md-4">
-      <div class="aboutUs__body-icon">
-        <img src="img/aboutUs/img2.png" alt="conversation">
-      </div>
-      <div class="aboutUs__body-title">One Page</div>
-      <div class="aboutUs__body-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+    <div class="about__management">
+      <div class="about__management-block ibg"><img class="about__management-img" src="img/page1/air_plane2.png" alt="beautiful white airplane"></div>
+      <h2 class="about__management-title box-title">management</h2>
+      <p class="about__management-text box-subtitle">Silver Air operates around one central organizing principle: our success as a company is directly related to your success as an aircraft owner.</p>
     </div>
-    <div class="aboutUs__body-response col-md-4">
-      <div class="aboutUs__body-icon">
-        <img src="img/aboutUs/img3.png" alt="thinking">
-      </div>
-      <div class="aboutUs__body-title">Fully Responsive</div>
-      <div class="aboutUs__body-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
-    </div>
-  </div>
-</div>
-
-<div class="ourServices" id="ourServices">
-  <div class="ourServices__wrapper">
-    <h2 class="ourServices__title block-title">Our Services</h2>
-    <p class="ourServices__subtitle block-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-    <div class="ourServices__row row">
-      <div class="ourServices__row-col col-md-4 col-sm-6" >
-         <div class="col-sm-12 ourServices__row-col12">
-           <div class="ourServices__research-icon icon-phone">
-             <img class="ourServices__icon-black phone-black" src="img/Services/img2.png" alt="smartphone">
-             <img class="ourServices__icon-white phone-white" id="phone-white" src="img/Services/img1.png" alt="smartphone">
-           </div>
-           <div class="ourServices__box-title">Research</div>
-           <div class="ourServices__box-content">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</div>
-           <div class="ourServices__block-btn">
-             <a href="#" class="btn ourServices__box-btn">READ MORE</a>
-           </div>
-        </div>
-      </div>
-      <div class="ourServices__row-col col-md-4 col-sm-6">
-         <div class="col-sm-12 ourServices__row-col12">
-           <div class="ourServices__portfolio-icon icon-phone">
-             <img class="ourServices__icon-black phone-black" src="img/Services/img2.png" alt="smartphone">
-             <img class="ourServices__icon-white phone-white" src="img/Services/img1.png" alt="smartphone">
-           </div>
-           <div class="ourServices__box-title">Portfolio</div>
-           <div class="ourServices__box-content">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</div>
-           <div  class="ourServices__block-btn">
-             <a href="#" class="btn ourServices__box-btn">READ MORE</a>
-           </div>
-        </div>
-      </div>
-      <div class="ourServices__row-col col-md-4 col-sm-6">
-         <div class="col-sm-12 ourServices__row-col12">
-           <div class="ourServices__support-icon icon-phone">
-             <img class="ourServices__icon-black phone-black" src="img/Services/img2.png" alt="smartphone">
-             <img class="ourServices__icon-white phone-white" src="img/Services/img1.png" alt="smartphone">
-           </div>
-           <div class="ourServices__box-title">Support</div>
-           <div class="ourServices__box-content">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</div>
-           <div class="ourServices__block-btn">
-             <a href="#" class="btn ourServices__box-btn">READ MORE</a>
-           </div>
-        </div>
-      </div>
-      <div class="ourServices__row-col col-md-4 col-sm-6">
-         <div class="col-sm-12 ourServices__row-col12">
-           <div class="ourServices__documentation-icon icon-phone">
-             <img class="ourServices__icon-black phone-black" src="img/Services/img2.png" alt="smartphone">
-             <img class="ourServices__icon-white phone-white" src="img/Services/img1.png" alt="smartphone">
-           </div>
-           <div class="ourServices__box-title">Documentation</div>
-           <div class="ourServices__box-content">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</div>
-           <div class="ourServices__block-btn">
-             <a href="#" class="btn ourServices__box-btn">READ MORE</a>
-           </div>
-        </div>
-      </div>
-      <div class="ourServices__row-col col-md-4 col-sm-6">
-         <div class="col-sm-12 ourServices__row-col12">
-           <div class="ourServices__development-icon icon-phone">
-             <img class="ourServices__icon-black phone-black" src="img/Services/img2.png" alt="smartphone">
-             <img class="ourServices__icon-white phone-white" src="img/Services/img1.png" alt="smartphone">
-           </div>
-           <div class="ourServices__box-title">Development</div>
-           <div class="ourServices__box-content">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</div>
-           <div class="ourServices__block-btn">
-             <a href="#" class="btn ourServices__box-btn">READ MORE</a>
-           </div>
-         </div>
-      </div>
-      <div class="ourServices__row-col col-md-4 col-sm-6">
-         <div class="col-sm-12 ourServices__row-col12">
-           <div class="ourServices__design-icon icon-phone">
-             <img class="ourServices__icon-black phone-black" src="img/Services/img2.png" alt="smartphone">
-             <img class="ourServices__icon-white phone-white" src="img/Services/img1.png" alt="smartphone">
-           </div>
-           <div class="ourServices__box-title">Design</div>
-           <div class="ourServices__box-content">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</div>
-           <div class="ourServices__block-btn">
-             <a href="#" class="btn ourServices__box-btn">READ MORE</a>
-           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="latestWorks" id="portfolio">
-   <h2 class="latestWorks__title block-title">Latest Works</h2>
-   <p class="latestWorks__subtitle block-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-   <div class="latestWorks__body">
-      <div class="latestWorks__body-btns text-center">
-         <button class="latestWorks__btn-all btn m-1 active" type="button">ALL</button>
-         <button class="latestWorks__btn-web btn m-1" type="button">WEB DESIGN</button>
-         <button class="latestWorks__btn-ux btn m-1" type="button">UI/UX DESIGN</button>
-         <button class="latestWorks__btn-mock btn m-1" type="button">MOCKUPS</button>
-      </div>
-      <div class="latestWorks__body-imgs row d-flex">
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-uxDesign">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid"  src="img/latestWorks/watch1.jpg" alt="Hand watch">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Hand Watch</h2>
-                  <p class="latestWorks__img-subtitle">ui/ux design</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-webDesign">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid" src="img/latestWorks/img2.png" alt="Helio 3">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Helio 3</h2>
-                  <p class="latestWorks__img-subtitle">web design</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-mokups">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid"  src="img/latestWorks/img3.png" alt="briefs and t-shirts">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Clothes</h2>
-                  <p class="latestWorks__img-subtitle">mokups</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-uxDesign">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid" src="img/latestWorks/img4.png" alt="Flask for alcohol">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Flask</h2>
-                  <p class="latestWorks__img-subtitle">ui/ux design</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-webDesign">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid" src="img/latestWorks/img5.png" alt="wine bottle">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Bottle</h2>
-                  <p class="latestWorks__img-subtitle">web design</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-mokups">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid" src="img/latestWorks/img6.png" alt="the kitchens bag">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Bag</h2>
-                  <p class="latestWorks__img-subtitle">mokups</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-uxDesign">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid"  src="img/latestWorks/watch1.jpg" alt="Hand watch">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Hand Watch</h2>
-                  <p class="latestWorks__img-subtitle">ui/ux design</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-webDesign">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid" src="img/latestWorks/img2.png"  alt="Helio 3">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Helio 3</h2>
-                  <p class="latestWorks__img-subtitle">web design</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-mokups">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid"  src="img/latestWorks/img3.png" alt="briefs and t-shirts">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Clothes</h2>
-                  <p class="latestWorks__img-subtitle">mokups</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-uxDesign">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid" src="img/latestWorks/img4.png" alt="Flask for alcohol">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Flask</h2>
-                  <p class="latestWorks__img-subtitle">ui/ux design</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-webDesign">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid" src="img/latestWorks/img5.png" alt="wine bottle">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Bottle</h2>
-                  <p class="latestWorks__img-subtitle">web design</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-mokups">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid" src="img/latestWorks/img6.png" alt="the kitchens bag">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Bag</h2>
-                  <p class="latestWorks__img-subtitle">mokups</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-uxDesign">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid"  src="img/latestWorks/watch1.jpg" alt="Hand watch">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Hand Watch</h2>
-                  <p class="latestWorks__img-subtitle">ui/ux design</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-webDesign">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid" src="img/latestWorks/img2.png" alt="Helio 3">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Helio 3</h2>
-                  <p class="latestWorks__img-subtitle">web design</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-mokups">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid"  src="img/latestWorks/img3.png" alt="briefs and t-shirts">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Clothes</h2>
-                  <p class="latestWorks__img-subtitle">mokups</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-uxDesign">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid" src="img/latestWorks/img4.png" alt="Flask for alcohol">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Flask</h2>
-                  <p class="latestWorks__img-subtitle">ui/ux design</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-webDesign">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid" src="img/latestWorks/img5.png" alt="wine bottle">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Bottle</h2>
-                  <p class="latestWorks__img-subtitle">web design</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-mokups">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid" src="img/latestWorks/img6.png" alt="the kitchens bag">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Bag</h2>
-                  <p class="latestWorks__img-subtitle">mokups</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-uxDesign">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid"  src="img/latestWorks/watch1.jpg" alt="Hand watch">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Hand Watch</h2>
-                  <p class="latestWorks__img-subtitle">ui/ux design</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-webDesign">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid" src="img/latestWorks/img2.png" alt="Helio 3">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Helio 3</h2>
-                  <p class="latestWorks__img-subtitle">web design</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-mokups">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid"  src="img/latestWorks/img3.png" alt="briefs and t-shirts">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Clothes</h2>
-                  <p class="latestWorks__img-subtitle">mokups</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-uxDesign">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid" src="img/latestWorks/img4.png" alt="Flask for alcohol">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Flask</h2>
-                  <p class="latestWorks__img-subtitle">ui/ux design</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-webDesign">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid" src="img/latestWorks/img5.png" alt="wine bottle">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Bottle</h2>
-                  <p class="latestWorks__img-subtitle">web design</p>
-               </div>
-            </div>
-         </div>
-         <div class="latestWorks__img-box col-sm-6 col-md-4 mb-4 btn-all btn-mokups">
-            <div class="latestWorks__img-block col-md-12">
-               <img class="img-fluid" src="img/latestWorks/img6.png" alt="the kitchens bag">
-               <div class="latestWorks__img-content">
-                  <h2 class="latestWorks__img-title">Bag</h2>
-                  <p class="latestWorks__img-subtitle">mokups</p>
-               </div>
-            </div>
-         </div>
-      </div>
-      <a href="javascript:void()" class="latestWorks__view-all">VIEW ALL</a>
-   </div>
-</div>
-
-<div class="pricing">
-   <div class="pricing__header">
-      <h2 class="pricing__header-title block-title">Pricing Plan</h2>
-      <p class="pricing__header-subtitle block-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-   </div>
-   <div class="pricing__body">
-      <div class="pricing__row row">
-         <div class="pricing__row-block col-sm-4">
-            <div class="pricing__row-box col-sm-12">
-               <div class="pricing__box-top">
-                  <h2 class="pricing__box-title">Free Trail</h2>
-                  <p class="pricing__box-subtitle"><sup>$</sup><span>00</span>per month</p>
-               </div>
-               <div class="pricing__box-body">
-                  <ul class="pricing__body-list">
-                     <li class="pricing__list-item">30 Free Trail</li>
-                     <li class="pricing__list-item">5 Free Projects</li>
-                     <li class="pricing__list-item">PHP 5 Enabled</li>
-                     <li class="pricing__list-item">24/7 Suports</li>
-                  </ul>
-                  <a href="#" class="pricing__box-btn btn">Order Now</a>
-               </div>
-            </div>
-         </div>
-         <div class="pricing__row-block col-sm-4">
-            <div class="pricing__row-box col-sm-12">
-               <div class="pricing__box-top">
-                  <h2 class="pricing__box-title">Basic</h2>
-                  <p class="pricing__box-subtitle"><sup>$</sup><span>50</span>per month</p>
-               </div>
-               <div class="pricing__box-body">
-                  <ul class="pricing__body-list">
-                     <li class="pricing__list-item">30 Free Trail</li>
-                     <li class="pricing__list-item">5 Free Projects</li>
-                     <li class="pricing__list-item">PHP 5 Enabled</li>
-                     <li class="pricing__list-item">24/7 Suports</li>
-                  </ul>
-                  <a href="#" class="pricing__box-btn btn">Order Now</a>
-               </div>
-            </div>
-         </div>
-         <div class="pricing__row-block col-sm-4">
-            <div class="pricing__row-box col-sm-12">
-               <div class="pricing__box-top">
-                  <h2 class="pricing__box-title">Ultimates</h2>
-                  <p class="pricing__box-subtitle"><sup>$</sup><span>99</span>per month</p>
-               </div>
-               <div class="pricing__box-body">
-                  <ul class="pricing__body-list">
-                     <li class="pricing__list-item">30 Free Trail</li>
-                     <li class="pricing__list-item">5 Free Projects</li>
-                     <li class="pricing__list-item">PHP 5 Enabled</li>
-                     <li class="pricing__list-item">24/7 Suports</li>
-                  </ul>
-                  <a href="#" class="pricing__box-btn btn">Order Now</a>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-
-<div class="team" id="team">
-   <div class="team__header">
-      <h2 class="team__header-title block-title">Our Team Member</h2>
-      <p class="team__header-subtitle block-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-   </div>
-   <div class="team__body">
-     <div  class="team__body-block">
-        <img class="team__body-img img-fluid" src="img/Team/img1.png" alt="General Manager John Doe photo">
-        <h2 class="team__body-name">John Doe</h2>
-        <p class="team__body-job">General Manager</p>
-        <div class="team__body-social">
-           <div class="team__social-facebook"><a class="team__facebook-item team__social-item" href="#"><i class="fab fa-facebook-square"></i></a></div>
-           <div class="team__social-twitter"><a class="team__twitter-item team__social-item"  href="#"><i class="fab fa-twitter-square"></i></a></div>
-           <div class="team__social-comments"><a class="team__comments-item team__social-item" href="#"><i class="fas fa-comments"></i></a></div>
-           <div class="team__social-hobby"><a class="team__hobby-item team__social-item" href="#"><i class="fas fa-basketball-ball"></i></a></div>
-        </div>
-     </div>
-     <div  class="team__body-block">
-        <img class="team__body-img img-fluid" src="img/Team/img2.png" alt="Office Director Alexa Biru photo">
-        <h2 class="team__body-name">Alexa Biru</h2>
-        <p class="team__body-job">Office Director</p>
-        <div class="team__body-social">
-           <div class="team__social-facebook"><a class="team__facebook-item team__social-item" href="#"><i class="fab fa-facebook-square"></i></a></div>
-           <div class="team__social-twitter"><a class="team__twitter-item team__social-item"  href="#"><i class="fab fa-twitter-square"></i></a></div>
-           <div class="team__social-comments"><a class="team__comments-item team__social-item" href="#"><i class="fas fa-comments"></i></a></div>
-           <div class="team__social-hobby"><a class="team__hobby-item team__social-item" href="#"><i class="fas fa-basketball-ball"></i></a></div>
-        </div>
-     </div>
-     <div  class="team__body-block">
-        <img class="team__body-img img-fluid" src="img/Team/img3.png" alt="Admin Ronobir sing photo">
-        <h2 class="team__body-name">Ronobir sing</h2>
-        <p class="team__body-job">Admin</p>
-        <div class="team__body-social">
-           <div class="team__social-facebook"><a class="team__facebook-item team__social-item" href="#"><i class="fab fa-facebook-square"></i></a></div>
-           <div class="team__social-twitter"><a class="team__twitter-item team__social-item"  href="#"><i class="fab fa-twitter-square"></i></a></div>
-           <div class="team__social-comments"><a class="team__comments-item team__social-item" href="#"><i class="fas fa-comments"></i></a></div>
-           <div class="team__social-hobby"><a class="team__hobby-item team__social-item" href="#"><i class="fas fa-basketball-ball"></i></a></div>
-        </div>
-     </div>
-     <div  class="team__body-block">
-        <img class="team__body-img img-fluid" src="img/Team/img1.png" alt="General Manager John Doe photo">
-        <h2 class="team__body-name">John Doe</h2>
-        <p class="team__body-job">General Manager</p>
-        <div class="team__body-social">
-           <div class="team__social-facebook"><a class="team__facebook-item team__social-item" href="#"><i class="fab fa-facebook-square"></i></a></div>
-           <div class="team__social-twitter"><a class="team__twitter-item team__social-item"  href="#"><i class="fab fa-twitter-square"></i></a></div>
-           <div class="team__social-comments"><a class="team__comments-item team__social-item" href="#"><i class="fas fa-comments"></i></a></div>
-           <div class="team__social-hobby"><a class="team__hobby-item team__social-item" href="#"><i class="fas fa-basketball-ball"></i></a></div>
-        </div>
-     </div>
-     <div  class="team__body-block">
-        <img class="team__body-img img-fluid" src="img/Team/img2.png"  alt="Office Director Alexa Biru photo">
-        <h2 class="team__body-name">Alexa Biru</h2>
-        <p class="team__body-job">Office Director</p>
-        <div class="team__body-social">
-           <div class="team__social-facebook"><a class="team__facebook-item team__social-item" href="#"><i class="fab fa-facebook-square"></i></a></div>
-           <div class="team__social-twitter"><a class="team__twitter-item team__social-item"  href="#"><i class="fab fa-twitter-square"></i></a></div>
-           <div class="team__social-comments"><a class="team__comments-item team__social-item" href="#"><i class="fas fa-comments"></i></a></div>
-           <div class="team__social-hobby"><a class="team__hobby-item team__social-item" href="#"><i class="fas fa-basketball-ball"></i></a></div>
-        </div>
-     </div>
-     <div  class="team__body-block">
-        <img class="team__body-img img-fluid" src="img/Team/img3.png" alt="Admin Ronobir sing photo">
-        <h2 class="team__body-name">Ronobir sing</h2>
-        <p class="team__body-job">Admin</p>
-        <div class="team__body-social">
-           <div class="team__social-facebook"><a class="team__facebook-item team__social-item" href="#"><i class="fab fa-facebook-square faw"></i></a></div>
-           <div class="team__social-twitter"><a class="team__twitter-item team__social-item"  href="#"><i class="fab fa-twitter-square faw"></i></a></div>
-           <div class="team__social-comments"><a class="team__comments-item team__social-item" href="#"><i class="fas fa-comments faw"></i></a></div>
-           <div class="team__social-hobby"><a class="team__hobby-item team__social-item" href="#"><i class="fas fa-basketball-ball faw"></i></a></div>
-        </div>
-     </div>
-  </div>
-</div>
-
-<div class="blog">
-   <div class="blog__header">
-      <h2 class="blog__header-title block-title">Blog</h2>
-      <p class="blog__header-subtitle block-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-   </div>
-   <div class="blog__body">
-      <div class="blog__body-row row">
-         <div class="blog__row-img col-sm-6 ibg">
-            <img class="blog__img" src="img/Blog/img1.png" alt="'Seo' made up of cubes">
-         </div>
-         <div class="blog__row-text col-sm-6">
-            <a href="#" class="blog__text-link">SEO Quis Vestibulum</a>
-            <div class="blog__text-subtitle">
-               <p class="blog__subtitle-calendar"><i class="fas fa-calendar-alt"></i>14.07.2017</p>
-               <p class="blog__subtitle-file"><i class="far fa-file"></i>Development</p>
-            </div>
-            <p class="blog__text-lorem">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-         </div>
-      </div>
-      <div class="blog__body-row row">
-         <div class="blog__row-text blog__row-text--change col-sm-6">
-            <div class="col-sm-12">
-               <a href="#" class="blog__text-link">SEO Quis Vestibulum</a>
-               <div class="blog__text-subtitle">
-                  <p class="blog__subtitle-calendar"><i class="fas fa-calendar-alt"></i>14.07.2017</p>
-                  <p class="blog__subtitle-file"><i class="far fa-file"></i>Development</p>
-               </div>
-             <p class="blog__text-lorem">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-            </div>
-         </div>
-         <div class="blog__row-img blog__row-img--change col-sm-6 ibg">
-               <img class="blog__img" src="img/Blog/img2.png" alt="'Seo' made up of cubes">
-         </div>
-      </div>
-      <div class="blog__body-row row">
-         <div class="blog__row-img col-sm-6 ibg">
-            <img class="blog__img" src="img/Blog/img3.png" alt="'Seo' made up of cubes">
-         </div>
-         <div class="blog__row-text col-sm-6">
-            <a href="#" class="blog__text-link">SEO Quis Vestibulum</a>
-            <div class="blog__text-subtitle">
-               <p class="blog__subtitle-calendar"><i class="fas fa-calendar-alt"></i>14.07.2017</p>
-               <p class="blog__subtitle-file"><i class="far fa-file"></i>Development</p>
-            </div>
-            <p class="blog__text-lorem">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-         </div>
-      </div>
-      <div class="blog__body-row row">
-         <div class="blog__row-text col-sm-6 blog__row-text--change">
-            <a href="#" class="blog__text-link">SEO Quis Vestibulum</a>
-            <div class="blog__text-subtitle">
-               <p class="blog__subtitle-calendar"><i class="fas fa-calendar-alt"></i>14.07.2017</p>
-               <p class="blog__subtitle-file"><i class="far fa-file"></i>Development</p>
-            </div>
-            <p class="blog__text-lorem">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-         </div>
-         <div class="blog__row-img col-sm-6 ibg blog__row-img--change">
-            <img class="blog__img" src="img/Blog/img1.png" alt="'Seo' made up of cubes">
-         </div>
-      </div>
-      <div class="blog__body-row row">
-         <div class="blog__row-img blog__row-img--change col-sm-6 ibg">
-               <img class="blog__img" src="img/Blog/img2.png" alt="'Seo' made up of cubes">
-         </div>
-         <div class="blog__row-text blog__row-text--change col-sm-6">
-            <div class="col-sm-12">
-               <a href="#" class="blog__text-link">SEO Quis Vestibulum</a>
-               <div class="blog__text-subtitle">
-                  <p class="blog__subtitle-calendar"><i class="fas fa-calendar-alt"></i>14.07.2017</p>
-                  <p class="blog__subtitle-file"><i class="far fa-file"></i>Development</p>
-               </div>
-             <p class="blog__text-lorem">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-            </div>
-         </div>
-      </div>
-      <div class="blog__body-row row">
-         <div class="blog__row-text col-sm-6 blog__row-text--change">
-            <a href="#" class="blog__text-link">SEO Quis Vestibulum</a>
-            <div class="blog__text-subtitle">
-               <p class="blog__subtitle-calendar"><i class="fas fa-calendar-alt"></i>14.07.2017</p>
-               <p class="blog__subtitle-file"><i class="far fa-file"></i>Development</p>
-            </div>
-            <p class="blog__text-lorem">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-         </div>
-         <div class="blog__row-img col-sm-6 ibg blog__row-img--change">
-            <img class="blog__img" src="img/Blog/img3.png" alt="'Seo' made up of cubes">
-         </div>
-      </div>
-      <a href="javascript:void()" class="blog__more-view btn">MORE VIEW</a>
-   </div>
-</div>
-
-<footer class="contacts ibg" id="contact">
-   <img src="img/Contacts/rawpixel-com-252127-unsplash.jpg" alt="contacts background. man with computer">
-   <div class="contacts__wrapper">
-      <div class="contacts__header">
-         <h2 class="contacts__header-title block-title">Contact Us</h2>
-         <p class="contacts__header-subtitle block-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-      </div>
-      <div class="contacts__info row">
-         <div class="contacts__row-wrapper col-md-4">
-            <div class="contacts__info-box">
-               <a class="contacts__box-navigation" href="https://www.google.com/search?q=Nobinagar+savar,Dhaka+Bangladesh&npsic=0&rflfq=1&rlha=0&rllag=23970657,90249683,6675&tbm=lcl&ved=2ahUKEwju8sjG6c_rAhXD-yoKHQApAlcQtgN6BAgLEAc&rldoc=1#rlfi=hd:;si:;mv:[[24.046549499999998,90.3536276],[23.7444815,90.2333688]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:1" target="_blank">
-                  <img class="contacts__navigation-img" src="img/Contacts/location.png" alt="location">
-               </a>
-               <p class="contacts__box-text">Nobinagar savar,Dhaka Bangladesh</p>
-            </div>
-         </div>
-         <div class="contacts__row-wrapper col-md-4">
-            <div class="contacts__info-box">
-               <a class="contacts__box-tel" href="tel:+8801743331996">
-                  <img class="contacts__tel-img" src="img/Contacts/phone.png" alt="location">
-               </a>
-               <div class="contacts__box-text">
-                  <p>+8801743331996</p>
-                  <p>+8801928737807</p>
-               </div>
-            </div>
-         </div>
-         <div class="contacts__row-wrapper col-md-4">
-            <div class="contacts__info-box">
-               <a class="contacts__box-mail" href="mailto:quickmasud@gmail.com" target="_blank">
-                  <img class="contacts__link-img" src="img/Contacts/mail.png" alt="location">
-               </a>
-               <div class="contacts__box-text">
-                  <p>quickmasud@gmail.com</p>
-                  <p>quickmasud@yahoo.com</p>
-               </div>
-            </div>
-         </div>
-      </div>
-      <form class="contacts__form">
-        <div class="contacts__form-row row form-row">
-          <div class="contacts__form-name col-md-6">
-            <input type="text" class="form-control" placeholder="Your NAME">
-          </div>
-          <div class="contacts__form-email col-md-6">
-            <input type="email" class="form-control" placeholder="Your Email">
+    <div class="about__content">
+      <p class="about__content-text box-subtitle">Silver Air is a leading private aircraft management company and direct charter operator that delivers a transparent, owner-advocate approach to management creating valuable partnerships with private jet owners. Founded in 2008, the company is based in Southern California with corporate offices in Santa Barbara. Silver Air manages a comprehensive fleet of luxury aircraft from light to long-range heavy jets and a global network operating around the clock, 24-hours-a-day.</p>
+      <div class="about__slider">
+        <div class="about__slider-page">
+          <h3 class="about__slider-title">Silver Air's PURE Management Expansion Continues into San Diego</h3>
+          <div class="about__slider-subtitle box-subtitle">
+            <p><i class="far fa-clock"></i>June 6, 2017</p>
+            <p><i class="fas fa-tags"></i>Press Release </p>
+            <p><i class="fas fa-user"></i>by Silver Air</p>
           </div>
         </div>
-         <textarea class="contacts__form-textarea form-control" rows="3" placeholder="Write Massage"></textarea>
-         <button type="submit" class="contacts__form-btn btn float-right">SEND</button>
-      </form>
-   </div>
-   <div class="contacts__bot">
-      <h2 class="contacts__bot-text">All rights Reserved © 2017</h2>
-   </div>
+        <div class="about__slider-page">
+          <h3 class="about__slider-title">Silver Air's PURE Management Expansion Continues into San Diego</h3>
+          <div class="about__slider-subtitle box-subtitle">
+            <p><i class="far fa-clock"></i>June 6, 2017</p>
+            <p><i class="fas fa-tags"></i>Press Release </p>
+            <p><i class="fas fa-user"></i>by Silver Air</p>
+          </div>
+        </div>
+        <div class="about__slider-page">
+          <h3 class="about__slider-title">Silver Air's PURE Management Expansion Continues into San Diego</h3>
+          <div class="about__slider-subtitle box-subtitle">
+            <p><i class="far fa-clock"></i>June 6, 2017</p>
+            <p><i class="fas fa-tags"></i>Press Release </p>
+            <p><i class="fas fa-user"></i>by Silver Air</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="traditional">
+  <dir class="traditional__wrapper">
+    <div class="traditional__content">
+      <h2 class="traditional__content-title box-title">TRADITIONAL VS PURE</h2>
+      <p class="traditional__content-subtitle box-subtitle">We have a totally new approach to managing private jets with highly educated and motivated people utilizing new technology and financial modeling to develop management plans that garner the best returns for owners.</p>
+      <div class="traditional__content-video">
+        <iframe width="1066" height="498" src="https://www.youtube.com/embed/Bry0T6PA5Yk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </dir>
+</div>
+
+<div class="connections">
+  <div class="connections__wrapper">
+    <div class="connection__header">
+      <div class="connection__header-content">
+        <p class="connection__content-subtitle box-subtitle">Business and Pleasure</p>
+        <h2 class="connection__content-title box-title">CONNECTIONS</h2>
+      </div>
+      <a href="#" class="connection__header-link">VIEW ALL</a>
+    </div>
+    <div class="connection__body">
+      <div class="row connection__body-row">
+        <div class="connection__row-box col-md-4">
+          <img class="connection__box-img" src="img/page1/connect/img1.png" alt="white airplane">
+          <a class="connection__box-link" href="#">PURE JET MANAGEMENT <span> &raquo;</span></a>
+          <p class="connection__box-subtitle box-subtitle" class="">AVIATION</p>
+        </div>
+        <div class="connection__row-box col-md-4">
+          <img class="connection__box-img" src="img/page1/connect/img2.png" alt="people on bicycles">
+          <a class="connection__box-link" href="#">SB100: I LOVE CYCLING <span> &raquo;</span></a>
+          <p class="connection__box-subtitle box-subtitle" class="">LIFESTYLE</p>
+        </div>
+        <div class="connection__row-box col-md-4">
+          <img class="connection__box-img" src="img/page1/connect/img3.png" alt="bags with popcorn">
+          <a class="connection__box-link" href="#">WHY OUR POPCORN IS BETTER THAN YOURS <span> &raquo;</span></a>
+          <p class="connection__box-subtitle box-subtitle" class="">AVIATION</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer id="foot">
+  <div class="footer__top-wrapper">
+    <div class="footer__top">
+      <div class="footer__top-about">
+        <h2 class="footer__about-title footer-title">ABOUT US</h2>
+        <p class="footer__about-subtitle box-subtitle">Silver Air is a leading private aircraft management company and direct charter operator that delivers a transparent, owner-advocate approach to management creating valuable partnerships with private jet owners. Founded in 2008, the company is based in Southern California with corporate offices in Santa Barbara. Silver Air manages a comprehensive fleet of luxury aircraft from light to long-range heavy jets and a global network operating around the clock, 24-hours-a-day.</p>
+      </div>
+      <div class="footer__top-news">
+        <h2 class="footer__news-title footer-title">LATEST NEWS</h2>
+        <div class="footer__news-content">
+          <a href="#" class="footer__news-subtitle1 box-subtitle">Silver Air Adds to California-Based Fleet</a>
+          <p class="footer__news-subtitle2 box-subtitle">Oct 31, 2016</p>
+        </div>
+        <div class="footer__news-subtitle">
+          <a href="#" class="footer__news-subtitle1 box-subtitle">Silver Air Opens New Base of Operations in Dallas</a>
+          <p class="footer__news-subtitle2 box-subtitle">Jul 20, 2016</p>
+        </div>
+      </div>
+      <div class="footer__top-contact">
+        <h2 class="footer__contact-title footer-title">CONTACT INFO</h2>
+        <div class="footer__contact-subtitle">
+          <p class="footer__contact-subtitle1 box-subtitle">Address:</p>
+          <a href="https://goo.gl/maps/XjjYGb7hB4G2"  class="footer__contact-subtitle2 box-subtitle" target="_blank">3760 State St. Suite 101 <br> Santa Barbara, CA 93105 <br> United States</a>
+        </div>
+        <div class="footer__contact-subtitle">
+          <p class="footer__contact-subtitle1 box-subtitle">Phone:</p>
+          <a href="tel:800.889.5840" class="footer__contact-subtitle2 box-subtitle">800.889.5840</a>
+        </div>
+        <div class="footer__contact-subtitle">
+          <p class="footer__contact-subtitle1 box-subtitle">Email:</p>
+          <a href="mailto:info@silverair.com" class="footer__contact-subtitle2 box-subtitle">info@silverair.com</a>
+        </div>
+        <div class="footer__contact-imgs">
+          <img class="footer__contact-img1" src="img/page1/contact/mg1.png" alt="platinum rated argus silver air">
+          <img class="footer__contact-img2" src="img/page1/contact/mg2.png" alt="international standart IS-BAO">
+          <img class="footer__contact-img3" src="img/page1/contact/mg3.png" alt="Flight Pro 135">
+          <img class="footer__contact-img4" src="img/page1/contact/mg4.png" alt="NBAA">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bot">
+    <div class="footer__bot-wrapper">
+      <div class="footer__bot-title">© 2017 Silver Air. All rights reserved.</div>
+      <div class="footer__bot-links">
+        <a class="footer__bot-link" href="#">Home</a>
+        <a class="footer__bot-link" href="#">Charter</a>
+        <a class="footer__bot-link" href="#">Ownership</a>
+        <a class="footer__bot-link" href="#">Company</a>
+        <a class="footer__bot-link" href="#">Fleet</a>
+        <a class="footer__bot-link" href="#">News</a>
+        <a class="footer__bot-link" href="#">Contact</a>
+      </div>
+    </div>
+  </div>
 </footer>
+
+
+
+
+
+
+
+
+
 
 
   <!-- CORE PLUGINS -->
  	<script src="source/jquery-3.5.1.min.js"></script>
-	<script src="source/bootstrap/bt4/bootstrap.bundle.min.js"></script>
 	<script src="source/bootstrap/bt4/bootstrap.min.js"></script>
+  <script src="source/bootstrap/bt4/bootstrap.bundle.min.js"></script>
    <script src="https://kit.fontawesome.com/dc76428574.js" crossorigin="anonymous"></script>
    <script src="source/slick/slick.js"></script>
   <!-- PAGE LVL PLUGINS -->
