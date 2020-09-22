@@ -51,7 +51,7 @@ $('.about__slider').slick({
 
 
 function checkForChanges(){
-  $(".about__slider .prev, .about__slider .next").height($(".about__slider").height()-29.2); 
+  $(".about__slider .prev, .about__slider .next").height($(".about__slider").height()); 
   setTimeout(checkForChanges, 500);
 }
 checkForChanges();

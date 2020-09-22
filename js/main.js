@@ -24,17 +24,17 @@ $(document).ready(function () {
       $('.nav-link').css('color', '#787878');
       $('.dropdown-menu').css('background', 'rgba(255,255,255, 0.7)');
     } else if ($(window).scrollTop() < 100 && $(window).width() < '768') {
-      $('.navigation_box').css('background', '#e3e3e3');
+      $('.navigation_box').css('background', '#ffffff');
       $('.nav-link').css('color', '#787878');
-      $('.dropdown-menu').css('background', '#e3e3e3');
+      $('.dropdown-menu').css('background', '#ffffff');
     }else if ($(window).scrollTop() > 100 && $(window).width() < '768') {
-      $('.navigation_box').css('background', '#e3e3e3');
+      $('.navigation_box').css('background', '#ffffff');
       $('.nav-link').css('color', '#787878');
-      $('.dropdown-menu').css('background', '#e3e3e3');
+      $('.dropdown-menu').css('background', '#ffffff');
     } else if ($(window).scrollTop() > 100 && $(window).width() >= '768') {
-      $('.navigation_box').css('background', '#e3e3e3');
+      $('.navigation_box').css('background', '#ffffff');
       $('.nav-link').css('color', '#787878');  
-      $('.dropdown-menu').css('background', '#e3e3e3');
+      $('.dropdown-menu').css('background', '#ffffff');
    
     }
   }
@@ -50,3 +50,8 @@ $(document).ready(function () {
 
 
 });
+
+
+
+
+    new WOW().init();
