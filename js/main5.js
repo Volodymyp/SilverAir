@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+ /*------------news btn view all and boxes show all-----------*/
   $('.news__boxes-box').hide();
   $('.news__boxes-box:hidden').slice(0, 6).show();
   $('.news__btn').on('click', function () {
@@ -18,8 +18,6 @@ $(document).ready(function () {
         $('.news__boxes-box:hidden').slice(0, 6).show();
     }
   });
-
-
 
 });
 

@@ -40,17 +40,24 @@ $('.topGalery__btn, .informatioon__btns-galery').on('click', function () {
     nextArrow: "<img src='../img/aircraft3/botGalery/slick-arrowR.png' class='next' alt='next'>",
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 1650,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
         }
       },
       {
-        breakpoint: 675,
+        breakpoint: 575,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 401,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       }
     ]
@@ -70,10 +77,17 @@ $('.topGalery__btn, .informatioon__btns-galery').on('click', function () {
         }
       },
       {
-        breakpoint: 675,
+        breakpoint: 575,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 401,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       }
     ]
@@ -92,10 +106,17 @@ $('.topGalery__btn, .informatioon__btns-galery').on('click', function () {
         }
       },
       {
-        breakpoint: 675,
+        breakpoint: 575,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 401,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       }
     ]
@@ -123,20 +144,9 @@ $('.topGalery__btn, .informatioon__btns-galery').on('click', function () {
   });
 
 
-/*.botGallery__btn-light:focus:after, .botGallery__btn-heavy:focus:after, .botGallery__btn-mid:focus:after*/
-  
-
-
 });
 
-/*    
-      $(this).addClass('changeSlide');
-      $('.changeSlide'){
 
-      }*/
-
-
-/* .botGallery__btn-mid, .botGallery__btn-light*/
 
 
 

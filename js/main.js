@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+/*-------class for background----------*/
+
   function ibg(){
 
   let ibg=document.querySelectorAll(".ibg");
@@ -12,30 +14,21 @@ $(document).ready(function () {
 
   ibg();
 
-  //---------------------burger
-  $(".navbar-toggler").on("click", function () {
-      $(this).toggleClass('babai');
-  });
+/*-------Navbar color scroll function plus window resize----------*/
 
-  //Navbar color scroll function
   function consoleBG() {
-    if ($(window).scrollTop() < 100 && $(window).width() >= '768') {
+    if ($(window).scrollTop() <= 100 && $(window).width() >= '768') {
       $('.navigation_box').css('background', 'rgba(255,255,255, 0.7)');
-      $('.nav-link').css('color', '#787878');
-      $('.dropdown-menu').css('background', 'rgba(255,255,255, 0.7)');
-    } else if ($(window).scrollTop() < 100 && $(window).width() < '768') {
+      $('.nav-link').css('color', '#787878'); 
+    } else if ($(window).scrollTop() <= 100 && $(window).width() < '768') {
       $('.navigation_box').css('background', '#ffffff');
       $('.nav-link').css('color', '#787878');
-      $('.dropdown-menu').css('background', '#ffffff');
     }else if ($(window).scrollTop() > 100 && $(window).width() < '768') {
       $('.navigation_box').css('background', '#ffffff');
       $('.nav-link').css('color', '#787878');
-      $('.dropdown-menu').css('background', '#ffffff');
     } else if ($(window).scrollTop() > 100 && $(window).width() >= '768') {
       $('.navigation_box').css('background', '#ffffff');
       $('.nav-link').css('color', '#787878');  
-      $('.dropdown-menu').css('background', '#ffffff');
-   
     }
   }
   consoleBG();
@@ -44,14 +37,16 @@ $(document).ready(function () {
     consoleBG();
   });
 
-
   $(window).on('load resize',consoleBG);
 
+  /*---------------burger-----------------*/
 
+  $(".navbar-toggler").on("click", function () {
+      $(this).toggleClass('babai');
+  });
 
 });
 
+/*-------wow animate----------*/
 
-
-
-    new WOW().init();
+new WOW().init();
